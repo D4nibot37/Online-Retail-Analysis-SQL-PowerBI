@@ -50,4 +50,4 @@ To ensure data integrity, I utilized a two-layer SQL architecture:
 
 ---
 **Contact:**
-[Daniel Cristians] - [https://www.linkedin.com/in/daniel-cristians-a4b23b270/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BzsYtuO91Shqm0hMPmndGDA%3D%3D]
+Let's connect! You can find me on [LinkedIn]([TU_URL_DE_LINKEDIN_AQUI](https://www.linkedin.com/in/daniel-cristians-a4b23b270/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BY5aWothPR9SQpMHE4gIcYg%3D%3D)).
