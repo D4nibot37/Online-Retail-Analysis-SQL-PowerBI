@@ -57,4 +57,4 @@ The Power BI data model was strictly designed following Kimball's Star Schema me
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/yourusername/online-retail-analytics.git](https://github.com/yourusername/online-retail-analytics.git)
+   git clone https://github.com/D4nibot37/online-retail-analytics.git
