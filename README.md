@@ -1,53 +1,46 @@
-# Online-Retail-Analysis-SQL-PowerBI
-“This project showcases an end-to-end data analysis workflow using PostgreSQL for data cleaning and transformation, and Power BI for visualization. Using the Online Retail dataset, it delivers clean, analysis-ready data and interactive dashboards that generate actionable business insights.”
+# Online Retail Analysis – Star Schema + Power BI Dashboard
 
-# Online Retail Data Analysis & ETL Pipeline
+**End-to-end data analytics project** using PostgreSQL for ETL and **Power BI with a professional Star Schema** model.
 
-## 📌 Project Overview
-This project transforms raw e-commerce transactional data into an interactive business intelligence solution. I implemented a full data workflow: from ingestion and cleaning in **SQL (PostgreSQL)** using a staging-to-production architecture, to the creation of advanced dashboards in **Power BI**.
+![Star Schema](images/star_schema.png)
 
-The primary goal was to resolve data quality issues—such as null values, incorrect date formats, and outliers—to provide reliable metrics on sales performance and customer behavior.
-
-## 🛠️ Tech Stack
-* **Database:** PostgreSQL (Staging -> Production Architecture).
-* **BI Tool:** Power BI (Data Modeling, DAX, and Visualization).
-* **Concepts:** ETL Process, Star Schema, Time Intelligence, and Business KPIs.
-
-## 📁 Repository Structure
-* `sql_scripts/`: Contains the full data cleansing and transformation pipeline.
-* `power_bi/`: The `.pbix` file with the interactive dashboards.
-* `images/`: Screenshots of the final reports.
-
----
-
-## 🔍 Data Pipeline (SQL)
-To ensure data integrity, I utilized a two-layer SQL architecture:
-
-1. **Staging Phase:** Created an intermediate table where all fields were imported as `TEXT`. This allowed for successful ingestion of the original CSV despite formatting inconsistencies.
-2. **Production Phase:** * **Cleaning:** Filtered out null `customer_id` records and removed transactions with negative prices or quantities.
-   * **Type Casting:** Converted data types from text to numeric and date formats (`TO_TIMESTAMP`) to enable accurate calculations.
-3. **Analytics Layer (Views):** Created an optimized `VIEW` that calculates `total_amount` at the server level, reducing the processing load on Power BI.
-
----
+## Tech Stack
+- **Database**: PostgreSQL (Staging → Production architecture + Analytics Views)
+- **BI Tool**: Power BI Desktop (Star Schema, Advanced DAX, Time Intelligence)
+- **Key Concepts**: ETL Pipeline, Dimensional Modeling, Date Table, Interactive Dashboards
 
 ## 📊 Dashboard Insights
 
-### 1. Executive Summary
-* **Critical Seasonality: Identified a significant sales peak in November, consistently performing well above the annual monthly average. This trend is driven by the pre-Christmas campaign and highlights a high dependency on Q4 logistics.
-* **Market Concentration:** The UK generates approximately 90% of revenue, indicating high geographical dependency.
-* **Data Integrity Note:** Detected that December 2011 only contains 9 days of data. Insights were adjusted to avoid bias in annual growth conclusions.
+### Executive Summary
+- Strong seasonality with significant sales peak in **November** every year (pre-Christmas campaign).
+- High market concentration: **UK generates ~90% of total revenue**.
+- Data quality note: December 2011 contains only 9 days of data.
 
-### 2. Product & Customer Insights
-* **Market Efficiency:** Countries like the **Netherlands and Australia** show a significantly higher **Average Ticket Size** than the UK, representing high-profitability opportunities.
-* **Top Performance:** Identification of star products based on sales volume and contribution margin.
+### Product & Customer Insights
+- Netherlands and Australia show significantly higher Average Ticket Size than the UK (high-profit opportunities).
+- Top 10 products by sales volume and contribution.
+- Scatter plot analysis: Total Sales vs Quantity per product.
+- Interactive slicers by Country, Product Description, and hierarchical Date.
 
+## Data Model (Star Schema)
 
+![Star Schema](images/star_schema.png)
 
-## 💡 How to Replicate
+*(Power BI Model view – Fact_sales connected to Dim_date, Dim_customer, Dim_product, and Dim_geography)*
+
+## Screenshots
+
+![Executive Summary](images/executive_summary.png)
+
+![Product & Customer Insights](images/product_customer_insights.png)
+
+## How to Replicate the Project
+
 1. Clone this repository.
-2. Run the `Script Sql Online_retail` script in your PostgreSQL environment.
-3. Open the `.pbix` file in Power BI Desktop to explore the interactive visualizations.
+2. Run the SQL scripts in order (folder `sql_scripts/`).
+3. Open the Power BI file:  
+   `power_bi/Online_Retail_Dashboard_Star_Schema.pbix`
 
 ---
-**Contact:**
-Let's connect! You can find me on [LinkedIn](https://www.linkedin.com/in/daniel-cristians-a4b23b270/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BY5aWothPR9SQpMHE4gIcYg%3D%3D)).
+
+**Project status**: Complete and ready for production-level analysis.
