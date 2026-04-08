@@ -15,7 +15,7 @@ The goal of this project is to analyze transactional data from a UK-based online
 ### 1. Executive Summary
 *Provides a high-level overview of KPIs, revenue trends, and geographical distribution.*
 ![Executive Summary Dashboard](images/executive_summary.png) 
-*(Tip: Ensure this image clearly shows your KPIs like Total Revenue, YoY Growth, and the map visual).*
+
 
 ### 2. Product & Customer Insights
 *Deep dive into basket analysis, customer segmentation, and product profitability.*
