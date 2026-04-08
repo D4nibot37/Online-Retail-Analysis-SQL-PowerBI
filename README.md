@@ -2,7 +2,6 @@
 
 **End-to-end data analytics project** using PostgreSQL for ETL and **Power BI with a professional Star Schema** model.
 
-![Star Schema](images/star_schema.png) 
 
 ## Tech Stack
 - **Database**: PostgreSQL (Staging → Production architecture + Analytics Views)
